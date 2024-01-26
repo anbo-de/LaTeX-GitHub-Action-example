@@ -1,1 +1,0 @@
-# LaTeX-GitHub-Action-example
