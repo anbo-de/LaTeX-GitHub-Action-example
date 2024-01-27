@@ -21,6 +21,7 @@ jobs:
       - name: '📦 upload as latest release'
         run: |
           cd ${{github.workspace}}
+          gh release delete-asset latest example.pdf
           gh release upload latest example.pdf
         env:
           GITHUB_TOKEN: ${{ github.TOKEN }}
